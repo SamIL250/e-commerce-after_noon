@@ -1,0 +1,16 @@
+RewriteEngine On
+
+# Remove .php extension from URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.+)$ $1.php [L]
+
+# Redirect index.php to the root domain
+RewriteCond %{THE_REQUEST} /index\.php [NC]
+RewriteRule ^index\.php$ / [R=301,L]
+
+# Prevent direct access to .htaccess file
+<Files .htaccess>
+    Order Allow,Deny
+    Deny from all
+</Files>
