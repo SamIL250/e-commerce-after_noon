@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="col-span-2">
-                    <p class="text-sm text-gray-500">Don't have an account <a href="" class="border-b">Sign Up</a> </p>
+                    <p class="text-sm text-gray-500">Already have an account <a href="auth-signin" class="border-b">Sign In</a> </p>
                 </div>
             </form>
         </div>

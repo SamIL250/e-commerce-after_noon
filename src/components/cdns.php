@@ -1,1 +1,4 @@
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<!-- //tailwind file -->
+<script src="./src/assets/js/tailwind.js"></script>
+

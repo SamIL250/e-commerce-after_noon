@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    include './config/config.php';
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,5 +13,8 @@
 </head>
 <body>
     <!-- //navbar -->
-    <?php include './src/components/navbar.php' ?>
+    <?php 
+        include './src/components/navbar.php';
+        include './src/components/notifications.php'
+    ?>
 
